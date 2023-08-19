@@ -5,7 +5,7 @@ import { removeContact } from "../features/counter/counterSlice";
 import { useAppDispatch, useAppSelector } from "../hooks";
 
 export default function Contacts() {
-  const [formState, setFormState] = useState(true);
+  const [formState, setFormState] = useState(false);
 
   const contacts = useAppSelector((state) => state.contacts.contacts);
   const dispatch = useAppDispatch();
