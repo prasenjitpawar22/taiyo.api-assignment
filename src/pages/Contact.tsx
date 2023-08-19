@@ -18,9 +18,9 @@ export default function Contacts() {
       <div className="flex gap-4 items-center">
         <button
           onClick={() => setFormState(!formState)}
-          className="bg-slate-50 p-2 rounded border-2 hover:shadow"
+          className="bg-slate-50 w-fit p-2 rounded border hover:shadow"
         >
-          Add Contact
+          {formState ? <span>x</span> : <span> Add Contact</span>}
         </button>
         {formState ? <ContactForm /> : null}
       </div>

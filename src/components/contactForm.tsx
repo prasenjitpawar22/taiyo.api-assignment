@@ -65,7 +65,7 @@ const ContactForm = () => {
           <label htmlFor="inactive">Inactive</label>
         </div>
         <input
-          className="bg-slate-50 px-2 rounded cursor-pointer"
+          className="bg-slate-50 border px-2 rounded cursor-pointer"
           type={"submit"}
           value="Create"
         />

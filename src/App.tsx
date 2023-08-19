@@ -5,12 +5,14 @@ import { Route, Routes } from "react-router-dom";
 import DashboardLayout from "./layouts/DashboardLayout";
 import NotFound from "./pages/NotFound";
 import Contacts from "./pages/Contact";
+import ChartsMaps from "./pages/ChartsMaps";
 
 function App() {
   return (
     <Routes>
       <Route path="/" element={<DashboardLayout />}>
-        <Route path="/contact" element={<Contacts />} />
+        <Route path="/" element={<Contacts />} />
+        <Route path="/charts-and-maps" element={<ChartsMaps />} />
       </Route>
       <Route path="*" element={<NotFound />} />
     </Routes>
